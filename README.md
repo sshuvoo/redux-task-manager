@@ -14,7 +14,7 @@ Please follow the below instructions to run this app in your machine:
    ```
 3. Start the server.
    ```sh
-   npm start
+   npm run dev
    ```
 4. Your app should be available in http://localhost:5173
 
