@@ -1,31 +1,39 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import {
+   useEditTaskMutation,
+   useGetTaskQuery,
+} from '../app/features/tasks/taskApi';
+import { useParams } from 'react-router-dom';
 import { useGetTeamQuery } from '../app/features/team/teamApi';
 import { useGetProjectsQuery } from '../app/features/projects/projectApi';
-import { useAddTaskMutation } from '../app/features/tasks/taskApi';
 import { useNavigate } from 'react-router-dom';
 
-export default function AddNewTaskPage() {
+export default function EditTaskPage() {
    const { data: team, isSuccess: isTeamSuccess } = useGetTeamQuery();
    const { data: projects, isSuccess: isProjectsSuccess } =
       useGetProjectsQuery();
-   const [addTask] = useAddTaskMutation();
+   const [editTask] = useEditTaskMutation();
+
+   const { id } = useParams();
+   const { data: task } = useGetTaskQuery(id, {
+      refetchOnMountOrArgChange: true,
+   });
 
    const [taskName, setTaskName] = useState('');
    const [assign, setAssign] = useState({});
    const [project, setProject] = useState({});
    const [deadline, setDeadline] = useState('');
-
    const navigate = useNavigate();
 
    const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-         await addTask({
+         await editTask({
+            id,
             taskName,
             teamMember: JSON.parse(assign),
             project: JSON.parse(project),
             deadline,
-            status: 'pending',
          }).unwrap();
          setTaskName('');
          setAssign({});
@@ -37,11 +45,20 @@ export default function AddNewTaskPage() {
       }
    };
 
+   useEffect(() => {
+      if (task?.id) {
+         setTaskName(task.taskName);
+         setAssign(JSON.stringify(task.teamMember));
+         setProject(JSON.stringify(task.project));
+         setDeadline(task.deadline);
+      }
+   }, [task]);
+
    return (
       <div className="container relative">
          <main className="relative z-20 max-w-3xl mx-auto rounded-lg xl:max-w-none">
             <h1 className="mt-4 mb-8 text-3xl font-bold text-center text-gray-800">
-               Create Task for Your Team
+               Edit Task for Your Team
             </h1>
 
             <div className="justify-center mb-10 space-y-2 md:flex md:space-y-0">

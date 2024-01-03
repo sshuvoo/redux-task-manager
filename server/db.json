@@ -70,81 +70,36 @@
   ],
   "tasks": [
     {
-      "taskName": "Task One",
+      "taskName": "Saad vai kaj ta koren",
       "teamMember": {
         "name": "Saad Hasan",
         "avatar": "/images/avatars/sadh.png",
         "id": 2
       },
       "project": {
-        "id": 1,
-        "projectName": "Scoreboard",
-        "colorClass": "color-scoreboard"
+        "id": 3,
+        "projectName": "Product Cart",
+        "colorClass": "color-productCart"
       },
-      "deadline": "2023-03-15",
-      "id": 1,
-      "status": "inProgress"
+      "deadline": "2024-01-01",
+      "status": "inProgress",
+      "id": 1
     },
     {
-      "taskName": "Task Two",
+      "taskName": "Hey Akash",
       "teamMember": {
         "name": "Akash Ahmed",
         "avatar": "/images/avatars/akash.png",
         "id": 3
       },
       "project": {
-        "id": 2,
-        "projectName": "Flight Booking",
-        "colorClass": "color-flight"
+        "id": 5,
+        "projectName": "Blog Application",
+        "colorClass": "color-blog"
       },
-      "deadline": "2023-03-23",
+      "deadline": "2024-01-31",
+      "status": "pending",
       "id": 2
-    },
-    {
-      "taskName": "Task Three",
-      "teamMember": {
-        "name": "Sumit Saha",
-        "avatar": "/images/avatars/sumit.png",
-        "id": 1
-      },
-      "project": {
-        "id": 3,
-        "projectName": "Product Cart",
-        "colorClass": "color-productCart"
-      },
-      "deadline": "2023-03-03",
-      "id": 3
-    },
-    {
-      "taskName": "New Task",
-      "teamMember": {
-        "name": "Sumit Saha",
-        "avatar": "/images/avatars/sumit.png",
-        "id": 1
-      },
-      "project": {
-        "id": 1,
-        "projectName": "Scoreboard",
-        "colorClass": "color-scoreboard"
-      },
-      "deadline": "2023-03-11",
-      "id": 4
-    },
-    {
-      "taskName": "Fix a bug",
-      "teamMember": {
-        "name": "Md Salahuddin",
-        "avatar": "/images/avatars/salahuddin.png",
-        "id": 4
-      },
-      "deadline": "2023-03-18",
-      "project": {
-        "id": 4,
-        "projectName": "Book Store",
-        "colorClass": "color-bookstore"
-      },
-      "id": 5,
-      "status": "completed"
     }
   ]
 }
