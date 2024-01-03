@@ -70,18 +70,18 @@
   ],
   "tasks": [
     {
-      "taskName": "Saad vai kaj ta koren",
+      "taskName": "Ei akash ki koros",
       "teamMember": {
-        "name": "Saad Hasan",
-        "avatar": "/images/avatars/sadh.png",
-        "id": 2
+        "name": "Md Salahuddin",
+        "avatar": "/images/avatars/salahuddin.png",
+        "id": 4
       },
       "project": {
-        "id": 3,
-        "projectName": "Product Cart",
-        "colorClass": "color-productCart"
+        "id": 1,
+        "projectName": "Scoreboard",
+        "colorClass": "color-scoreboard"
       },
-      "deadline": "2024-01-01",
+      "deadline": "2023-12-06",
       "status": "inProgress",
       "id": 1
     },
@@ -98,8 +98,88 @@
         "colorClass": "color-blog"
       },
       "deadline": "2024-01-31",
-      "status": "pending",
+      "status": "inProgress",
       "id": 2
+    },
+    {
+      "taskName": "bhgbgbgb",
+      "teamMember": {
+        "name": "Akash Ahmed",
+        "avatar": "/images/avatars/akash.png",
+        "id": 3
+      },
+      "project": {
+        "id": 2,
+        "projectName": "Flight Booking",
+        "colorClass": "color-flight"
+      },
+      "deadline": "2024-01-10",
+      "status": "complete",
+      "id": 3
+    },
+    {
+      "taskName": "bfsddfghgbhg",
+      "teamMember": {
+        "name": "Md Salahuddin",
+        "avatar": "/images/avatars/salahuddin.png",
+        "id": 4
+      },
+      "project": {
+        "id": 3,
+        "projectName": "Product Cart",
+        "colorClass": "color-productCart"
+      },
+      "deadline": "2024-01-16",
+      "status": "complete",
+      "id": 4
+    },
+    {
+      "taskName": "fvddcdcdc",
+      "teamMember": {
+        "name": "Saad Hasan",
+        "avatar": "/images/avatars/sadh.png",
+        "id": 2
+      },
+      "project": {
+        "id": 4,
+        "projectName": "Book Store",
+        "colorClass": "color-bookstore"
+      },
+      "deadline": "2024-01-18",
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "taskName": "mjmjmj",
+      "teamMember": {
+        "name": "Ferdous Hassan",
+        "avatar": "/images/avatars/ferdous.png",
+        "id": 6
+      },
+      "project": {
+        "id": 5,
+        "projectName": "Blog Application",
+        "colorClass": "color-blog"
+      },
+      "deadline": "2024-01-20",
+      "status": "complete",
+      "id": 6
+    },
+    {
+      "taskName": "hnhnhnhnh",
+      "teamMember": {
+        "name": "Arif Almas",
+        "avatar": "/images/avatars/almas.png",
+        "id": 7
+      },
+      "project": {
+        "id": 6,
+        "projectName": "Job Finder",
+        "colorClass": "color-jobFinder"
+      },
+      "deadline": "2024-01-19",
+      "status": "pending",
+      "id": 7
     }
   ]
 }
